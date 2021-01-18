@@ -1,0 +1,2 @@
+[11-Apr-2016 04:16:28] PHP Notice:  Undefined index:  l in /home/thongt52/public_html/ckeditor/plugins/templates/templates/images/player.php on line 3
+[11-Apr-2016 04:16:28] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty in /home/thongt52/public_html/ckeditor/plugins/templates/templates/images/player.php on line 3

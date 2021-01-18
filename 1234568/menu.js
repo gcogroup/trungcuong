@@ -1,0 +1,10 @@
+stm_bm(["menu6984",400,"","blank.gif",0,"","",0,0,0,0,50,1,0,0,""],this);
+stm_bp("p0",[0,4,0,0,0,2,0,0,100,"",-2,"",-2,90,0,0,"#7f7f7f","transparent","",3,1,1,"#6666ff"]);
+stm_ai("p0i0",[0,"Menu Item 1","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,1,"#ffffff",1,"#ffffff",1,"TBBG2.JPG","TBBG5.GIF",3,3,0,0,"#ffffff","#ffffff","#000000","#ffffff","bold 9pt Arial","bold 9pt Arial",0,0]);
+stm_bpx("p1","p0",[1,4,0,2,0,4,0,0,100,"progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0,wipeStyle=1,motion=forward,enabled=0,Duration=0.50)",5,"",-2,60,2,3,"#cccccc","transparent","TBBG5.GIF"]);
+stm_aix("p1i0","p0i0",[0,"Menu Item 1                    ","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,1,"#ffffff",1,"#ffffff",1,"","HEADBG.GIF",3,3,0,0,"#ffffff","#ffffff","#333333"]);
+stm_aix("p1i1","p1i0",[0,"Menu Item 1"]);
+stm_aix("p1i2","p1i0",[0,"Menu Item 2"]);
+stm_ep();
+stm_ep();
+stm_em();

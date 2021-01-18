@@ -1,0 +1,22 @@
+#Options +FollowSymlinks
+RewriteEngine on
+#DirectoryIndex index.html index.php home.html
+AddDefaultcharset utf-8
+RewriteBase /
+
+RewriteRule ^San-pham-([0-9]*)-([a-zA-Z0-9_-]*).html index.php?act=pro&idroot=$1&name_en=$2
+RewriteRule ^San-pham_p-([0-9]*)-([0-9]*).html index.php?act=pro&idroot=$1&p=$2
+
+RewriteRule ^San-pham_g-([0-9]*)-([0-9]*)-([a-zA-Z0-9_-]*).html index.php?act=pro&idroot=$1&parentid=$2&name_en=$3
+RewriteRule ^San-pham_g_p-([0-9]*)-([0-9]*)-([0-9]*).html index.php?act=pro&idroot=$1&parentid=$2&p=$3
+
+RewriteRule ^San-pham_c-([0-9]*)-([0-9]*)-([0-9]*)-([a-zA-Z0-9_-]*).html index.php?act=pro&idroot=$1&parentid=$2&idcat=$3&name_en=$4
+RewriteRule ^([0-9]*)-([0-9]*)-([0-9]*)-([0-9]*)-([a-zA-Z0-9_-]*).html index.php?act=pro&idroot=$1&parentid=$2&idcat=$3&id=$4&name_en=$5
+RewriteRule ^San-pham_c_p-([0-9]*)-([0-9]*)-([0-9]*)-([0-9]*).html index.php?act=pro&idroot=$1&parentid=$2&idcat=$3&p=$4
+
+RewriteRule ^Cong-ty-tnhh-thuong-mai-dich-vu-Minh-Phong-Trung-Cuong.html index.php?act=info
+RewriteRule ^Lien-he.html index.php?act=contact
+RewriteRule ^Video_p-([0-9]*).html index.php?act=video&p=$1
+RewriteRule ^Video.html index.php?act=video
+
+RewriteRule ^home.html index.php
