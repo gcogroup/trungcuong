@@ -1,218 +1,435 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<!-- metas -->
-<meta charset="utf-8">
-<meta name="author" content="" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="keywords" content="{site_keywords}" />
-<meta name="description" content="{site_description}" />
-<meta property="og:image" content="{image_meta}" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="600" />
-<meta name="robots" content="noodp,index,follow" />
-<meta name="author" content="workandrelax@gmail.com" />
-<meta name="copyright" content="workandrelax@gmail.com" /> 
-<meta name="REVISIT-AFTER" content="1 DAYS" />
-<meta name="RATING" content="GENERAL" />
-<meta http-equiv="Refresh" content="900" />	
-<META NAME="author" CONTENT="workandrelax@gmail.com,0974 83 6866">
-
- <!-- title  -->
- <title>{site_name}</title>
-
- <!-- favicon -->
- <link rel="shortcut icon" href="img/logos/favicon.png">
-
- <!-- plugins -->
- <link rel="stylesheet" href="css/plugins.css" />
-
- <!-- revolution slider css -->
- <link rel="stylesheet" href="css/rev_slider/settings.css">
- <link rel="stylesheet" href="css/rev_slider/layers.css">
- <link rel="stylesheet" href="css/rev_slider/navigation.css">
-
- <!-- search css -->
- <link rel="stylesheet" href="search/search.css" />
-
- <!-- custom css -->
- <link href="css/styles.css" rel="stylesheet" id="colors">
- 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-142787317-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</head>
-
-<body>
-
- <!-- start page loading -->
- <div id="preloader">
-  <div class="row loader">
-   <div class="loader-icon"></div>
-  </div>
- </div>
- <!-- end page loading -->
-
- <!-- start main-wrapper section -->
- <div class="main-wrapper">
-
-  <!-- start header section -->
-  <header class="header-style4">
-
-   <div class="navbar-default">
-
-    <!-- start top search -->
-    <div class="top-search bg-theme">
-     <div class="container">
-      <form class="search-form" action="index.php" method="GET" accept-charset="utf-8">
-	  <input type="hidden" name="act" value="search">
-       <div class="input-group">
-        <span class="input-group-addon cursor-pointer">
-			<button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
-		</span>
-        <input type="text" class="search-form_input form-control" name="txtsearch" autocomplete="off" placeholder="Nhập từ khoá và ấn enter..." value="{txtsearch}">
-        <span class="input-group-addon close-search"><i class="fas fa-times font-size18 line-height-28 margin-5px-top"></i></span>
-       </div>
-      </form>
-     </div>
-    </div>
-    <!-- end top search -->
-
-    <div class="container">
-     <div class="row align-items-center">
-      <div class="col-12 col-lg-12">
-
-       <div class="navbar-header navbar-header-custom row">
-
-        <div class="col-xl-4 col-lg-4">
-         <!-- start logo -->
-         <a href="index.php" class="navbar-brand logodefault"><img id="logo" src="img/logo.png" alt="logo"></a>
-         <!-- end logo -->
-        </div>
-
-        <div class="col-xl-8 col-lg-8 sm-display-none">
-         <div class="row">
-          <div class="col-md-6">
-           <div class="width-100">
-            <span class="display-inline-block width-40px vertical-align-top">
-               <i class="fas fa-map-marker-alt text-theme-color font-size30"></i>
-             </span>
-            <p class="display-inline-block no-margin width-75 vertical-align-top">
-             <span class="font-weight-600 display-block">{address}</span>
-            </p>
-           </div>
-          </div>
-          <div class="col-md-6">
-           <div class="width-100">
-            <span class="display-inline-block width-40px vertical-align-top">
-                                            <i class="fas fa-mobile-alt text-theme-color font-size30"></i>
-                                        </span>
-            <p class="display-inline-block no-margin width-75 vertical-align-top">
-             <span class="font-weight-600 display-block">{tel} | {hotline}</span>
-             <span>{site_email}</span>
-            </p>
-           </div>
-          </div>
-         </div>
-        </div>
-
-       </div>
-
-      </div>
-     </div>
-    </div>
-
-    <div class="menu_area alt-font">
-
-     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light no-padding">
-       <div class="navbar-toggler"></div>
-
-       <!-- menu area -->
-       <ul class="navbar-nav" id="nav" style="display: none;">
-        <li class="{current_home}"><a href="index.php" title="CÔNG TY TNHH THƯƠNG MẠI, SX VÀ DỊCH VỤ MINH PHONG - TRUNG CƯƠNG">Trang chủ</a></li>
-        <li class="{current_info}"><a href="Cong-ty-tnhh-thuong-mai-dich-vu-Minh-Phong-Trung-Cuong.html" title="CÔNG TY TNHH THƯƠNG MẠI, SX VÀ DỊCH VỤ MINH PHONG - TRUNG CƯƠNG">Giới thiệu</a></li>
-		<!-- START BLOCK : menu -->
-		<li><a href="{link}" title="{name}">{name}</a>
-         <ul class="row megamenu mega2">
-		  <!-- START BLOCK : menu2 -->
-		<li class="col-lg-3 col-sm-12">
-           <ul>
-            <li {class_has_sub}>
-            <a href="{link}" title="{name}">{name}</a>
-			 <!-- START BLOCK : menu03 -->
-             <ul>
-			 <!-- START BLOCK : menu3 -->
-              <li><a href="{link}" title="{name}">{name}</a></li>
-			  <!-- END BLOCK : menu3 -->
-             </ul>
-			 <!-- END BLOCK : menu03 -->
-            </li>
-
-           </ul>
-          </li>
-          <!-- END BLOCK : menu2 -->
-         </ul>
-        </li>
-		<!-- END BLOCK : menu -->
-		<!-- START BLOCK : menu_may_thuc_pham -->
-        <li><a href="{link}" title="{name}">{name}</a>
-         <ul>
-		 <!-- START BLOCK : menu_may_thuc_pham1 -->
-          <li><a href="{link}" title="{name}">{name}</a></li>
-		  <!-- END BLOCK : menu_may_thuc_pham1 -->
-         </ul>
-        </li>
-		<!-- END BLOCK : menu_may_thuc_pham -->
-        <li class="{current_video}"><a href="index.php?act=video">Video</a></li>
-        <li class="{current_contact}"><a href="index.php?act=contact">Liên hệ</a></li>
-       </ul>
-       <!-- end menu area -->
-
-       <!-- start attribute navigation -->
-       <div class="attr-nav sm-no-margin sm-margin-70px-right xs-margin-65px-right ml-auto">
-        <ul class="cart-search">
-         <li class="search"><a href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
-        </ul>
-        <ul class="top-social-icon">
-         <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-         <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-         <li><a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a></li>
-         <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-       </div>
-       <!-- end attribute navigation -->
-
-      </nav>
-     </div>
-
-    </div>
-   </div>
-
-  </header>
-  <!-- end header section -->
-
-  <!-- START BLOCK : slide -->
-  <div class="rev_slider_wrapper fullscreen custom-controls custom-paragraph">
-   <div id="rev_slider_2" class="rev_slider fullscreenbanner" style="display: none;" data-version="5.4.5">
-    <ul>
-     <!-- START BLOCK : slide_image -->
-     <li data-transition="parallaxtoright">
-      <div class="z-index-1"></div>
-      <img src="upload/images/{image}" alt="{name}" class="rev-slidebg">
-     </li>
-	 <!-- END BLOCK : slide_image -->
-    </ul>
-   </div>
-  </div>
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+<!-- metas -->
+
+<meta charset="utf-8">
+
+<meta name="author" content="" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="keywords" content="{site_keywords}" />
+
+<meta name="description" content="{site_description}" />
+
+<meta property="og:image" content="{image_meta}" />
+
+<meta property="og:image:width" content="600" />
+
+<meta property="og:image:height" content="600" />
+
+<meta name="robots" content="index,follow" />
+
+<meta name="author" content="workandrelax@gmail.com" />
+
+<meta name="copyright" content="workandrelax@gmail.com" /> 
+
+<meta name="REVISIT-AFTER" content="1 DAYS" />
+
+<meta name="RATING" content="GENERAL" />
+
+<meta http-equiv="Refresh" content="900" />	
+
+<META NAME="author" CONTENT="workandrelax@gmail.com,0974 83 6866">
+
+
+
+ <!-- title  -->
+
+ <title>{site_name}</title>
+
+
+
+ <!-- favicon -->
+
+ <link rel="shortcut icon" href="img/logos/favicon.png">
+
+
+
+ <!-- plugins -->
+
+ <link rel="stylesheet" href="css/plugins.css" />
+
+
+
+ <!-- revolution slider css -->
+
+ <link rel="stylesheet" href="css/rev_slider/settings.css">
+
+ <link rel="stylesheet" href="css/rev_slider/layers.css">
+
+ <link rel="stylesheet" href="css/rev_slider/navigation.css">
+
+
+
+ <!-- search css -->
+
+ <link rel="stylesheet" href="search/search.css" />
+
+
+
+ <!-- custom css -->
+
+ <link href="css/styles.css" rel="stylesheet" id="colors">
+
+ 
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-142787317-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+ <!-- start page loading -->
+
+ <div id="preloader">
+
+  <div class="row loader">
+
+   <div class="loader-icon"></div>
+
+  </div>
+
+ </div>
+
+ <!-- end page loading -->
+
+
+
+ <!-- start main-wrapper section -->
+
+ <div class="main-wrapper">
+
+
+
+  <!-- start header section -->
+
+  <header class="header-style4">
+
+
+
+   <div class="navbar-default">
+
+
+
+    <!-- start top search -->
+
+    <div class="top-search bg-theme">
+
+     <div class="container">
+
+      <form class="search-form" action="index.php" method="GET" accept-charset="utf-8">
+
+	  <input type="hidden" name="act" value="search">
+
+       <div class="input-group">
+
+        <span class="input-group-addon cursor-pointer">
+
+			<button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
+
+		</span>
+
+        <input type="text" class="search-form_input form-control" name="txtsearch" autocomplete="off" placeholder="Nhập từ khoá và ấn enter..." value="{txtsearch}">
+
+        <span class="input-group-addon close-search"><i class="fas fa-times font-size18 line-height-28 margin-5px-top"></i></span>
+
+       </div>
+
+      </form>
+
+     </div>
+
+    </div>
+
+    <!-- end top search -->
+
+
+
+    <div class="container">
+
+     <div class="row align-items-center">
+
+      <div class="col-12 col-lg-12">
+
+
+
+       <div class="navbar-header navbar-header-custom row">
+
+
+
+        <div class="col-xl-4 col-lg-4">
+
+         <!-- start logo -->
+
+         <a href="index.php" class="navbar-brand logodefault"><img id="logo" src="img/logo.png" alt="logo"></a>
+
+         <!-- end logo -->
+
+        </div>
+
+
+
+        <div class="col-xl-8 col-lg-8 sm-display-none">
+
+         <div class="row">
+
+          <div class="col-md-6">
+
+           <div class="width-100">
+
+            <span class="display-inline-block width-40px vertical-align-top">
+
+               <i class="fas fa-map-marker-alt text-theme-color font-size30"></i>
+
+             </span>
+
+            <p class="display-inline-block no-margin width-75 vertical-align-top">
+
+             <span class="font-weight-600 display-block">{address}</span>
+
+            </p>
+
+           </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+           <div class="width-100">
+
+            <span class="display-inline-block width-40px vertical-align-top">
+
+                                            <i class="fas fa-mobile-alt text-theme-color font-size30"></i>
+
+                                        </span>
+
+            <p class="display-inline-block no-margin width-75 vertical-align-top">
+
+             <span class="font-weight-600 display-block">{tel} | {hotline}</span>
+
+             <span>{site_email}</span>
+
+            </p>
+
+           </div>
+
+          </div>
+
+         </div>
+
+        </div>
+
+
+
+       </div>
+
+
+
+      </div>
+
+     </div>
+
+    </div>
+
+
+
+    <div class="menu_area alt-font">
+
+
+
+     <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light no-padding">
+
+       <div class="navbar-toggler"></div>
+
+
+
+       <!-- menu area -->
+
+       <ul class="navbar-nav" id="nav" style="display: none;">
+
+        <li class="{current_home}"><a href="index.php" title="CÔNG TY TNHH THƯƠNG MẠI, SX VÀ DỊCH VỤ MINH PHONG - TRUNG CƯƠNG">Trang chủ</a></li>
+
+        <li class="{current_info}"><a href="Cong-ty-tnhh-thuong-mai-dich-vu-Minh-Phong-Trung-Cuong.html" title="CÔNG TY TNHH THƯƠNG MẠI, SX VÀ DỊCH VỤ MINH PHONG - TRUNG CƯƠNG">Giới thiệu</a></li>
+
+		<!-- START BLOCK : menu -->
+
+		<li><a href="{link}" title="{name}">{name}</a>
+
+         <ul class="row megamenu mega2">
+
+		  <!-- START BLOCK : menu2 -->
+
+		<li class="col-lg-3 col-sm-12">
+
+           <ul>
+
+            <li {class_has_sub}>
+
+            <a href="{link}" title="{name}">{name}</a>
+
+			 <!-- START BLOCK : menu03 -->
+
+             <ul>
+
+			 <!-- START BLOCK : menu3 -->
+
+              <li><a href="{link}" title="{name}">{name}</a></li>
+
+			  <!-- END BLOCK : menu3 -->
+
+             </ul>
+
+			 <!-- END BLOCK : menu03 -->
+
+            </li>
+
+
+
+           </ul>
+
+          </li>
+
+          <!-- END BLOCK : menu2 -->
+
+         </ul>
+
+        </li>
+
+		<!-- END BLOCK : menu -->
+
+		<!-- START BLOCK : menu_may_thuc_pham -->
+
+        <li><a href="{link}" title="{name}">{name}</a>
+
+         <ul>
+
+		 <!-- START BLOCK : menu_may_thuc_pham1 -->
+
+          <li><a href="{link}" title="{name}">{name}</a></li>
+
+		  <!-- END BLOCK : menu_may_thuc_pham1 -->
+
+         </ul>
+
+        </li>
+
+		<!-- END BLOCK : menu_may_thuc_pham -->
+
+        <li class="{current_video}"><a href="index.php?act=video">Video</a></li>
+
+        <li class="{current_contact}"><a href="index.php?act=contact">Liên hệ</a></li>
+
+       </ul>
+
+       <!-- end menu area -->
+
+
+
+       <!-- start attribute navigation -->
+
+       <div class="attr-nav sm-no-margin sm-margin-70px-right xs-margin-65px-right ml-auto">
+
+        <ul class="cart-search">
+
+         <li class="search"><a href="javascript:void(0)"><i class="fas fa-search"></i></a></li>
+
+        </ul>
+
+        <ul class="top-social-icon">
+
+         <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+
+         <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+
+         <li><a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a></li>
+
+         <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+
+        </ul>
+
+       </div>
+
+       <!-- end attribute navigation -->
+
+
+
+      </nav>
+
+     </div>
+
+
+
+    </div>
+
+   </div>
+
+
+
+  </header>
+
+  <!-- end header section -->
+
+
+
+  <!-- START BLOCK : slide -->
+
+  <div class="rev_slider_wrapper fullscreen custom-controls custom-paragraph">
+
+   <div id="rev_slider_2" class="rev_slider fullscreenbanner" style="display: none;" data-version="5.4.5">
+
+    <ul>
+
+     <!-- START BLOCK : slide_image -->
+
+     <li data-transition="parallaxtoright">
+
+      <div class="z-index-1"></div>
+
+      <img src="upload/images/{image}" alt="{name}" class="rev-slidebg">
+
+     </li>
+
+	 <!-- END BLOCK : slide_image -->
+
+    </ul>
+
+   </div>
+
+  </div>
+
   <!-- END BLOCK : slide -->
